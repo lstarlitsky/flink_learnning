@@ -1,0 +1,8 @@
+hello java
+hello python
+hello flink
+hello akka
+hello hdfs
+how are you
+i am fine
+thank you
