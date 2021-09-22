@@ -21,8 +21,8 @@ public class WordCount {
 
         // 数据集地址
         String inputPath = "/home/mit/my_project/big_data/flink/flink_learnning/src/main/resources/hello.txt";
-
         DataSet<String> inputDataSet = env.readTextFile(inputPath);
+
         DataSet<Tuple2<String, Integer>> resultDataSet = inputDataSet.flatMap(new MyFlatMap())
                 .groupBy(0)
                 .sum(1);
